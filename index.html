@@ -1,0 +1,1444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Sydonya Miller | Video Editor & Social Media Manager</title>
+
+<meta name="description" content="Professional Video Editor, Content Creator and Social Media Manager specializing in cinematic storytelling, YouTube editing, TikTok, Reels and content strategy.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+
+background:#020817;
+color:white;
+overflow-x:hidden;
+
+}
+
+a{
+
+text-decoration:none;
+color:white;
+
+}
+
+section{
+
+padding:110px 8%;
+
+}
+
+::-webkit-scrollbar{
+
+width:8px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+background:#1d4ed8;
+border-radius:20px;
+
+}
+
+nav{
+
+position:fixed;
+top:0;
+left:0;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:rgba(2,8,23,.85);
+backdrop-filter:blur(15px);
+z-index:999;
+
+}
+
+.logo{
+
+font-size:28px;
+font-weight:700;
+
+}
+
+.logo span{
+
+color:#3b82f6;
+
+}
+
+nav ul{
+
+display:flex;
+list-style:none;
+gap:35px;
+
+}
+
+nav ul li a{
+
+transition:.3s;
+
+}
+
+nav ul li a:hover{
+
+color:#60a5fa;
+
+}
+
+.contactBtn{
+
+background:#2563eb;
+padding:14px 26px;
+border-radius:12px;
+transition:.3s;
+
+}
+
+.contactBtn:hover{
+
+transform:translateY(-4px);
+
+}
+
+.hero{
+
+min-height:100vh;
+
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:70px;
+
+background:
+
+linear-gradient(rgba(2,8,23,.85),rgba(2,8,23,.95)),
+
+url("https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&w=1800&q=80");
+
+background-size:cover;
+background-position:center;
+
+}
+
+.heroLeft{
+
+max-width:700px;
+
+}
+
+.smallTitle{
+
+color:#60a5fa;
+letter-spacing:4px;
+font-size:14px;
+margin-bottom:20px;
+
+}
+
+.hero h1{
+
+font-size:72px;
+line-height:1;
+
+margin-bottom:25px;
+
+}
+
+.hero h1 span{
+
+color:#3b82f6;
+
+}
+
+.hero p{
+
+font-size:19px;
+color:#cbd5e1;
+line-height:1.8;
+
+}
+
+.heroButtons{
+
+display:flex;
+gap:20px;
+margin-top:45px;
+
+}
+
+.primary{
+
+background:#2563eb;
+padding:16px 35px;
+border-radius:12px;
+transition:.3s;
+
+}
+
+.primary:hover{
+
+transform:translateY(-4px);
+
+}
+
+.secondary{
+
+border:2px solid white;
+padding:16px 35px;
+border-radius:12px;
+
+}
+
+.heroImage{
+
+position:relative;
+
+}
+
+.heroImage img{
+
+width:370px;
+height:520px;
+object-fit:cover;
+border-radius:25px;
+
+border:5px solid #1d4ed8;
+
+box-shadow:0 30px 70px rgba(37,99,235,.35);
+
+}
+
+.glow{
+
+position:absolute;
+width:420px;
+height:420px;
+background:#2563eb;
+filter:blur(150px);
+z-index:-1;
+top:40px;
+left:-20px;
+opacity:.4;
+
+}
+
+.stats{
+
+display:grid;
+
+grid-template-columns:repeat(4,1fr);
+
+gap:30px;
+
+margin-top:-80px;
+
+padding:0 8%;
+
+}
+
+.stat{
+
+background:#081325;
+
+padding:40px;
+
+border-radius:22px;
+
+text-align:center;
+
+border:1px solid rgba(255,255,255,.05);
+
+}
+
+.stat h2{
+
+font-size:42px;
+
+color:#60a5fa;
+
+margin-bottom:10px;
+
+}
+
+.stat p{
+
+color:#cbd5e1;
+
+}
+
+.sectionTitle{
+
+color:#60a5fa;
+
+letter-spacing:4px;
+
+text-transform:uppercase;
+
+margin-bottom:12px;
+
+}
+
+.about{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:70px;
+
+align-items:center;
+
+}
+
+.about img{
+
+width:100%;
+
+border-radius:25px;
+
+}
+
+.about h2{
+
+font-size:45px;
+
+margin-bottom:25px;
+
+}
+
+.about p{
+
+line-height:1.9;
+
+color:#cbd5e1;
+
+margin-bottom:20px;
+
+}
+
+.tags{
+
+display:flex;
+
+gap:20px;
+
+flex-wrap:wrap;
+
+margin-top:25px;
+
+}
+
+.tag{
+
+padding:12px 22px;
+
+background:#0d1d38;
+
+border-radius:50px;
+
+}
+
+@media(max-width:1000px){
+
+.hero{
+
+flex-direction:column-reverse;
+
+text-align:center;
+
+padding-top:140px;
+
+}
+
+.heroButtons{
+
+justify-content:center;
+
+}
+
+.stats{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.about{
+
+grid-template-columns:1fr;
+
+}
+
+nav ul{
+
+display:none;
+
+}
+
+.hero h1{
+
+font-size:52px;
+
+}
+
+.heroImage img{
+
+width:300px;
+height:430px;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">
+
+<span>Sydonya</span> Miller
+
+</div>
+
+<ul>
+
+<li><a href="#about">About</a></li>
+
+<li><a href="#services">Services</a></li>
+
+<li><a href="#portfolio">Portfolio</a></li>
+
+<li><a href="#results">Results</a></li>
+
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+<a class="contactBtn" href="#contact">
+
+Let's Work
+
+</a>
+
+</nav>
+
+<section class="hero">
+
+<div class="heroLeft">
+
+<p class="smallTitle">
+
+VIDEO EDITOR • SOCIAL MEDIA MANAGER
+
+</p>
+
+<h1>
+
+Turning <span>Stories</span><br>
+
+Into Cinematic Content.
+
+</h1>
+
+<p>
+
+I'm <strong>Sydonya Miller</strong>, a professional video editor and social media manager with over 10 years of editing experience. I specialize in YouTube videos, TikToks, Instagram Reels, and content strategy that helps brands grow through storytelling and analytics.
+
+</p>
+
+<div class="heroButtons">
+
+<a class="primary" href="#portfolio">
+
+View Portfolio
+
+</a>
+
+<a class="secondary" href="#contact">
+
+Hire Me
+
+</a>
+
+</div>
+
+</div>
+
+<div class="heroImage">
+
+<div class="glow"></div>
+
+<img src="YOUR_PHOTO_HERE.jpg">
+
+</div>
+
+</section>
+
+<div class="stats">
+
+<div class="stat">
+
+<h2>10+</h2>
+
+<p>Years Editing</p>
+
+</div>
+
+<div class="stat">
+
+<h2>700+</h2>
+
+<p>Followers Gained in 1 Month</p>
+
+</div>
+
+<div class="stat">
+
+<h2>8K+</h2>
+
+<p>Audience Managed</p>
+
+</div>
+
+<div class="stat">
+
+<h2>2023+</h2>
+
+<p>Professional Experience</p>
+
+</div>
+
+</div>
+
+<section id="about">
+
+<div class="about">
+
+<div>
+
+<p class="sectionTitle">
+
+About Me
+
+</p>
+
+<h2>
+
+Creating Stories Since 2015
+
+</h2>
+
+<p>
+
+My passion for video editing started in 2015 while I was in high school. During the COVID-19 pandemic, I launched my own YouTube channel, sharpening my storytelling skills through consistent content creation.
+
+</p>
+
+<p>
+
+From 2023 to 2025, I worked professionally in social media management, content creation, and analytics, helping organizations grow their online presence through strategic content and engaging visuals.
+
+</p>
+
+<p>
+
+Today, I combine creativity with strategy to produce content that captures attention, builds communities, and delivers measurable results.
+
+</p>
+
+<div class="tags">
+
+<div class="tag">🎬 Storytelling</div>
+
+<div class="tag">📱 Social Media</div>
+
+<div class="tag">📈 Analytics</div>
+
+<div class="tag">🎨 Creative Design</div>
+
+</div>
+
+</div>
+
+<div>
+
+<img src="YOUR_PHOTO_HERE.jpg">
+
+</div>
+
+</div>
+
+</section>
+
+<!-- PART 2 STARTS BELOW -->
+
+  <section id="services">
+
+<p class="sectionTitle">
+
+Services
+
+</p>
+
+<h2 style="font-size:45px;margin-bottom:20px;">
+
+Helping Brands Create Content That Performs
+
+</h2>
+
+<p style="color:#cbd5e1;max-width:750px;line-height:1.8;">
+
+From cinematic YouTube edits to viral short-form content and complete social media management, I help businesses and creators produce engaging content that connects with audiences and drives measurable growth.
+
+</p>
+
+<div class="cards">
+
+<div class="card">
+
+<i class="fa-solid fa-film fa-2x"></i>
+
+<h3>Long-Form Editing</h3>
+
+<p>
+
+Professional YouTube videos, podcasts, documentaries, interviews, educational content and vlogs.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-mobile-screen-button fa-2x"></i>
+
+<h3>Short-Form Editing</h3>
+
+<p>
+
+TikTok, Instagram Reels and YouTube Shorts optimized for engagement and retention.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-calendar-days fa-2x"></i>
+
+<h3>Content Planning</h3>
+
+<p>
+
+Monthly content calendars, strategy, scheduling and posting.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-chart-line fa-2x"></i>
+
+<h3>Analytics</h3>
+
+<p>
+
+Performance tracking, audience insights and data-driven improvements.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-users fa-2x"></i>
+
+<h3>Community Management</h3>
+
+<p>
+
+Audience engagement, comment management and social media growth.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-palette fa-2x"></i>
+
+<h3>Graphic Design</h3>
+
+<p>
+
+Social graphics, thumbnails and promotional assets.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<style>
+
+.cards{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+gap:30px;
+
+margin-top:60px;
+
+}
+
+.card{
+
+background:#081325;
+
+padding:40px;
+
+border-radius:25px;
+
+transition:.35s;
+
+border:1px solid rgba(255,255,255,.05);
+
+}
+
+.card:hover{
+
+transform:translateY(-10px);
+
+box-shadow:0 20px 40px rgba(37,99,235,.25);
+
+}
+
+.card i{
+
+color:#3b82f6;
+
+margin-bottom:25px;
+
+}
+
+.card h3{
+
+margin-bottom:15px;
+
+font-size:24px;
+
+}
+
+.card p{
+
+color:#cbd5e1;
+
+line-height:1.8;
+
+}
+
+.portfolioGrid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(500px,1fr));
+
+gap:40px;
+
+margin-top:60px;
+
+}
+
+.videoCard{
+
+background:#081325;
+
+border-radius:25px;
+
+overflow:hidden;
+
+border:1px solid rgba(255,255,255,.05);
+
+}
+
+.videoCard h3{
+
+padding:25px;
+
+font-size:24px;
+
+}
+
+.videoCard p{
+
+padding:0 25px 25px;
+
+color:#cbd5e1;
+
+}
+
+iframe{
+
+width:100%;
+
+height:315px;
+
+border:none;
+
+}
+
+.resultsGrid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+gap:30px;
+
+margin-top:60px;
+
+}
+
+.result{
+
+background:#081325;
+
+padding:40px;
+
+border-radius:20px;
+
+}
+
+.result h2{
+
+font-size:52px;
+
+color:#3b82f6;
+
+margin-bottom:10px;
+
+}
+
+</style>
+
+<section id="portfolio">
+
+<p class="sectionTitle">
+
+Portfolio
+
+</p>
+
+<h2 style="font-size:45px;">
+
+Featured Long-Form Work
+
+</h2>
+
+<div class="portfolioGrid">
+
+<div class="videoCard">
+
+<iframe src="https://www.youtube.com/embed/5pluW0n_hog" allowfullscreen></iframe>
+
+<h3>YouTube Project 01</h3>
+
+<p>Cinematic editing, pacing, storytelling and color grading.</p>
+
+</div>
+
+<div class="videoCard">
+
+<iframe src="https://www.youtube.com/embed/ggWTonEjHk8" allowfullscreen></iframe>
+
+<h3>YouTube Project 02</h3>
+
+<p>Professional long-form editing with smooth transitions.</p>
+
+</div>
+
+<div class="videoCard">
+
+<iframe src="https://www.youtube.com/embed/Z3biWzNXQR0" allowfullscreen></iframe>
+
+<h3>YouTube Project 03</h3>
+
+<p>Creative editing focused on audience retention.</p>
+
+</div>
+
+<div class="videoCard">
+
+<iframe src="https://www.youtube.com/embed/atGc0o2eY9U" allowfullscreen></iframe>
+
+<h3>YouTube Project 04</h3>
+
+<p>Story-driven editing with professional pacing.</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<p class="sectionTitle">
+
+Short Form
+
+</p>
+
+<h2 style="font-size:45px;">
+
+TikTok & Reels Portfolio
+
+</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>TikTok Edit #1</h3>
+
+<p>
+
+<a href="https://www.tiktok.com/t/ZTSf3at1T/" target="_blank">
+
+Watch Video →
+
+</a>
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>TikTok Edit #2</h3>
+
+<p>
+
+<a href="https://www.tiktok.com/t/ZTSfTJ7Yv/" target="_blank">
+
+Watch Video →
+
+</a>
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>TikTok Edit #3</h3>
+
+<p>
+
+<a href="https://www.tiktok.com/t/ZTSfTN7J5/" target="_blank">
+
+Watch Video →
+
+</a>
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>TikTok Edit #4</h3>
+
+<p>
+
+<a href="https://www.tiktok.com/t/ZTSfTN2fJ/" target="_blank">
+
+Watch Video →
+
+</a>
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="results">
+
+<p class="sectionTitle">
+
+Results
+
+</p>
+
+<h2 style="font-size:45px;">
+
+Performance That Speaks For Itself
+
+</h2>
+
+<div class="resultsGrid">
+
+<div class="result">
+
+<h2>700+</h2>
+
+<p>
+
+Grew the Rollins College STEM social media account from fewer than 100 followers to over 700 followers in one month.
+
+</p>
+
+</div>
+
+<div class="result">
+
+<h2>8K–10K</h2>
+
+<p>
+
+Managed and contributed to content for Rollins College's primary social media account.
+
+</p>
+
+</div>
+
+<div class="result">
+
+<h2>10+</h2>
+
+<p>
+
+Years of video editing, storytelling and content creation experience.
+
+</p>
+
+</div>
+
+<div class="result">
+
+<h2>Brands</h2>
+
+<p>
+
+Rollins College<br><br>
+
+Bubble Skincare
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- PART 3 STARTS BELOW -->
+
+  <section id="contact">
+
+<p class="sectionTitle">
+
+Contact
+
+</p>
+
+<h2 style="font-size:45px;margin-bottom:20px;">
+
+Let's Create Something Amazing
+
+</h2>
+
+<p style="max-width:700px;margin:auto;color:#cbd5e1;line-height:1.8;">
+
+Whether you need a cinematic YouTube edit, engaging TikToks, or complete social media management, I'd love to help bring your vision to life.
+
+</p>
+
+<div class="contactGrid">
+
+<div class="contactCard">
+
+<i class="fa-solid fa-envelope"></i>
+
+<h3>Email</h3>
+
+<a href="mailto:sydonya.a.miller@gmail.com">
+
+sydonya.a.miller@gmail.com
+
+</a>
+
+</div>
+
+<div class="contactCard">
+
+<i class="fa-solid fa-phone"></i>
+
+<h3>Phone</h3>
+
+<a href="tel:+18764130487">
+
+(876) 413-0487
+
+</a>
+
+</div>
+
+<div class="contactCard">
+
+<i class="fa-brands fa-instagram"></i>
+
+<h3>Instagram</h3>
+
+<a href="https://instagram.com/sydslilworld_" target="_blank">
+
+@sydslilworld_
+
+</a>
+
+</div>
+
+<div class="contactCard">
+
+<i class="fa-brands fa-tiktok"></i>
+
+<h3>TikTok</h3>
+
+<a href="https://tiktok.com/@sydslilworld_" target="_blank">
+
+@sydslilworld_
+
+</a>
+
+</div>
+
+</div>
+
+<div style="margin-top:60px;">
+
+<a class="primary" href="mailto:sydonya.a.miller@gmail.com">
+
+Hire Me
+
+</a>
+
+</div>
+
+</section>
+
+<footer>
+
+<h2>
+
+Sydonya <span>Miller</span>
+
+</h2>
+
+<p>
+
+Video Editor • Social Media Manager • Content Strategist
+
+</p>
+
+<div class="footerLinks">
+
+<a href="#about">About</a>
+
+<a href="#services">Services</a>
+
+<a href="#portfolio">Portfolio</a>
+
+<a href="#results">Results</a>
+
+<a href="#contact">Contact</a>
+
+</div>
+
+<div class="socialIcons">
+
+<a href="https://instagram.com/sydslilworld_" target="_blank">
+
+<i class="fab fa-instagram"></i>
+
+</a>
+
+<a href="https://tiktok.com/@sydslilworld_" target="_blank">
+
+<i class="fab fa-tiktok"></i>
+
+</a>
+
+<a href="mailto:sydonya.a.miller@gmail.com">
+
+<i class="fas fa-envelope"></i>
+
+</a>
+
+</div>
+
+<p class="copyright">
+
+© 2026 Sydonya Miller. All Rights Reserved.
+
+</p>
+
+</footer>
+
+<style>
+
+.contactGrid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+gap:30px;
+
+margin-top:60px;
+
+}
+
+.contactCard{
+
+background:#081325;
+
+padding:35px;
+
+border-radius:20px;
+
+text-align:center;
+
+transition:.35s;
+
+border:1px solid rgba(255,255,255,.05);
+
+}
+
+.contactCard:hover{
+
+transform:translateY(-8px);
+
+box-shadow:0 20px 40px rgba(37,99,235,.25);
+
+}
+
+.contactCard i{
+
+font-size:35px;
+
+margin-bottom:20px;
+
+color:#3b82f6;
+
+}
+
+.contactCard h3{
+
+margin-bottom:12px;
+
+}
+
+.contactCard a{
+
+color:#cbd5e1;
+
+word-break:break-word;
+
+}
+
+footer{
+
+padding:80px 8%;
+
+background:#050b17;
+
+text-align:center;
+
+border-top:1px solid rgba(255,255,255,.05);
+
+}
+
+footer h2{
+
+font-size:40px;
+
+margin-bottom:10px;
+
+}
+
+footer span{
+
+color:#3b82f6;
+
+}
+
+footer p{
+
+color:#94a3b8;
+
+}
+
+.footerLinks{
+
+margin:35px 0;
+
+display:flex;
+
+justify-content:center;
+
+gap:30px;
+
+flex-wrap:wrap;
+
+}
+
+.footerLinks a{
+
+color:white;
+
+transition:.3s;
+
+}
+
+.footerLinks a:hover{
+
+color:#3b82f6;
+
+}
+
+.socialIcons{
+
+display:flex;
+
+justify-content:center;
+
+gap:20px;
+
+margin:30px 0;
+
+}
+
+.socialIcons a{
+
+width:55px;
+
+height:55px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+background:#0d1d38;
+
+border-radius:50%;
+
+font-size:22px;
+
+transition:.3s;
+
+}
+
+.socialIcons a:hover{
+
+background:#2563eb;
+
+transform:translateY(-5px);
+
+}
+
+.copyright{
+
+margin-top:30px;
+
+font-size:14px;
+
+}
+
+.fade{
+
+opacity:0;
+
+transform:translateY(40px);
+
+transition:all .8s ease;
+
+}
+
+.fade.show{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+</style>
+
+<script>
+
+const observer = new IntersectionObserver((entries)=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+entry.target.classList.add("show");
+
+}
+
+});
+
+});
+
+document.querySelectorAll("section,.stat,.card,.videoCard,.result,.contactCard").forEach(el=>{
+
+el.classList.add("fade");
+
+observer.observe(el);
+
+});
+
+</script>
+
+</body>
+
+</html>
